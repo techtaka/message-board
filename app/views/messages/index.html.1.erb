@@ -12,17 +12,18 @@
  </div>
 </div>
 
-<%= form_for(Message.new) do |f| %>  
+<%= form_for(Message.new) do |f| %>    
  <label for="message-board_name">名前</label>
   <div class="form-group">
-   <%= f.text_field :name, class: "form-control" %>
+   <%= f.text_field :name, class: 'form-control' %> 
   </div>
 
  <label for="message-board_content">内容</label>
   <div class="form-group">
-   <%= f.text_area :body, class: "form-control" %>
+   <%= f.text_area :body, class: 'form-control' %>
   </div>
- 
+
  <br />  
   <%= f.submit class: "btn btn-sm btn-primary" %>
 <% end %>
+
